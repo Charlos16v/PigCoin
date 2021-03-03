@@ -52,7 +52,7 @@
                         <archive>
                             <manifest>
                                 <addClasspath>true</addClasspath>
-                                <mainClass>edu.pingpong.app.App</mainClass>
+                                <mainClass>edu.pingpong.pigcoin.App</mainClass>
                                 <classpathPrefix>dependency-jars/</classpathPrefix>
                             </manifest>
                         </archive>
