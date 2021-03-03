@@ -1,7 +1,6 @@
-package edu.pingpong.app;
+package edu.pingpong.pigcoin;
 
 import java.security.KeyPair;
-import java.util.Map;
 
 public class App {
 
@@ -10,7 +9,7 @@ public class App {
         /**
          * Crea una wallet
          * Genera las claves privada y publica de la wallet 
-
+        */
 
         System.out.println("\n" + "Ver clave Privada y clave Pública de una wallet" + "\n" + 
                                   "==============================================="        );
@@ -26,7 +25,7 @@ public class App {
          * Crea una segunda wallet, esta vez generando sus claves
          * con un metodo wallet.generateKeyPair() que encapsula
          * el codigo de la anterior historia de usuario
-
+        */
 
         Wallet wallet_2 = new Wallet();
         wallet_2.generateKeyPair();
@@ -35,7 +34,7 @@ public class App {
 
         /**
          * Visualiza las Wallet 1 y 2
-
+        */
         
         System.out.println("\n" + "Ver Wallets 1 y 2" + "\n" + 
                                   "================="        );
@@ -213,7 +212,7 @@ public class App {
 
         
         String message = "he roto la hucha :(";
-        byte[] signedTransaction = wallet_1.signTransaction(message); // usa edu.pingpong.app.GenSig.sign()
+        byte[] signedTransaction = wallet_1.signTransaction(message); // usa edu.pingpong.pigcoin.GenSig.sign()
         wallet_1.sendCoins(wallet_2.getAddress(), pigcoins, message, bChain); // usa wallet.collectCoins() y bChain.processTransactions()
         
         /**
@@ -234,7 +233,7 @@ public class App {
          * 
          * boolean bChain.isSignatureValid(public_Key, message, signedTransaction)
          * 
-         * Este metodo usa edu.pingpong.app.GenSig.verify()
+         * Este metodo usa edu.pingpong.pigcoin.GenSig.verify()
          */
         
         /**

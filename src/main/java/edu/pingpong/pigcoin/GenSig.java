@@ -1,4 +1,4 @@
-package edu.pingpong.app;
+package edu.pingpong.pigcoin;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
